@@ -1,0 +1,19 @@
+<div class="main-container">
+  <div class="nav">
+    <div class="title-box">
+      <h1 class="title">
+        {{ title }}
+      </h1>
+    </div>
+    <div class="nav-but-box">
+      <a routerLink="dashboard">Home</a>
+      <a routerLink="heroes">Heroes</a>
+      <app-hero-search></app-hero-search>
+    </div>   
+  </div>
+  <div class="row">
+    <router-outlet></router-outlet>
+    <!-- <app-heroes></app-heroes> -->
+  </div>
+</div>
+

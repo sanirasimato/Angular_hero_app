@@ -1,0 +1,11 @@
+.clear{
+    display: block;
+    color:white;
+    background-color: crimson;
+    width:20%;
+    border:none;
+    outline:none;
+    padding:8px;
+    border-radius: 5px;
+    margin:0 0 10px 0;
+}

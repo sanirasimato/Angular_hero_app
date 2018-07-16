@@ -1,0 +1,50 @@
+<div class="hero-container">
+  <div class="section">
+    <div class="heroes-view">
+      <div class="heroes-title">
+        <h2>My Heroes</h2>
+      </div>
+      <div class="heroes-content">
+        <div>
+          <ul class="heroes">
+            <!-- <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
+                                  <span class="badge">{{hero.id}}</span>{{hero.name}}
+            </li> -->
+            <li *ngFor="let hero of heroes">
+              <a routerLink="/detail/{{hero.id}}">
+                <span class="badge">{{hero.id}}</span>{{hero.name}}
+              </a>
+              <button class="delete" title="delete hero" (click)="delete(hero)">X</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="add-hero-view">
+      <div class="add-hero-section">
+        <h2>Add a Hero</h2>
+        <div>
+          <label>
+            Hero Name
+            <input #heroName placeholder="Enter Hero Name" />
+          </label>
+        </div>
+        <div class="but-section">
+          <button class="back-but" (click)="add(heroName.value); heroName.value=''">Add</button>
+        </div>
+      </div>
+      <!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
+    </div>
+    <div class="message-view">
+        <div class="title-section">
+          <h2 class="msg-title">Messages</h2>
+          <button class="clear" (click)="messageService.clear()">Clear</button>
+        </div>
+      <div class="msgs">
+        <app-messages></app-messages>
+      </div>
+    </div> 
+  </div>
+</div>

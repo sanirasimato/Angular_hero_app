@@ -1,0 +1,44 @@
+.dash-container{
+    display: flex;
+    width: 100%;
+    min-width:100%;
+    flex-direction: column;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+.dash-container h2{
+    color: #444;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.dash-content{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.dash-content a{
+    width: 100px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.dash-content a :hover{
+    background-color: #ccc;
+    color: #222;
+}
+.dash-hero-content{
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #222;
+    color: #fff;
+    margin: 5px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    min-width: 100px;
+    max-height: 40px;
+}

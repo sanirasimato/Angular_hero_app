@@ -1,0 +1,46 @@
+.hero-view{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* height:200px; */
+    padding: 30px;
+    width:100%;
+    flex-direction: column;
+}
+.hero-view div{
+    display:flex;
+    padding:10px 0;
+    flex-wrap:wrap;
+    flex-direction: row;
+    font-size: 24px;
+}
+input{
+    outline:none;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 7px 5px;
+    width:20%;
+}
+.back-but{
+    display: block;
+    color:#222;
+    background-color: rgb(191, 248, 210);
+    width:13%;
+    border:none;
+    outline:none;
+    padding:8px;
+    border-radius: 5px;
+    margin:0 0 10px 0;
+    cursor: pointer;
+    margin:10px 10px 0 0;
+}
+.cback-but:hover{
+    background-color: rgb(45, 243, 111);
+}
+.but-container{
+    width: 100%;
+    display:flex;
+    padding:0;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
